@@ -2,7 +2,7 @@
 
 This guide will get you up and running with the Game Closure
 DevKit. First, you'll download and install DevKit, then get introduced
-to `basil`, our command-line tool for creating new projects
+to `devkit`, our command-line tool for creating new projects
 and development. Once everything is installed and ready
 to go, please read the [Hello, World! Guide](../guide/hello-world.html)
 to create your first application.
@@ -51,7 +51,7 @@ Now problematic characters like NBSP will be highlighted in red and you can dele
 
 With the prerequisites installed, we're ready to set up the
 Game Closure DevKit. The library and tools are open source and
-hosted in our [GitHub repository](https://github.com/gameclosure/devkit).
+hosted in our [GitHub repository](https://github.com/hashcube/devkit).
 We'll be using the `git` tool to keep our software updated,
 and there is [lots of help](https://help.github.com)
 available for how to use `git`.
@@ -60,7 +60,7 @@ To download the Game Closure DevKit, issue the following
 commands at the terminal:
 
 ~~~
-$ git clone https://github.com/gameclosure/devkit
+$ git clone https://github.com/hashcube/devkit
 ~~~
 
 This downloads the DevKit in to the `./devkit` directory located
@@ -72,20 +72,20 @@ $ cd devkit
 $ ./install.sh
 ~~~
 
-This installs the command-line program `basil`, which is used to
-create and serve projects. To see a list of basil commands,
+This installs the command-line program `devkit`, which is used to
+create and serve projects. To see a list of devkit commands,
 simply run it in your terminal without any arguments:
 
 ~~~
-$ basil
+$ devkit
 ~~~
 
-This prints out a list of basil commands. You can get
-help for a particular command by typing `basil help [command]`,
+This prints out a list of devkit commands. You can get
+help for a particular command by typing `devkit help [command]`,
 for example:
 
 ~~~
-$ basil help init
+$ devkit help init
 ~~~
 
 Some commands can also take a `-h` argument to show help.
@@ -95,12 +95,12 @@ Some commands can also take a `-h` argument to show help.
 To keep your copy of the DevKit up to date, run the update command:
 
 ~~~
-$ basil update
+$ devkit update
 ~~~
 
-The update command is also able to check out older versions of the DevKit or different channels of DevKit versions.  Read the help menu with `basil update --help` for more information on this flexible tool.
+The update command is also able to check out older versions of the DevKit or different channels of DevKit versions.  Read the help menu with `devkit update --help` for more information on this flexible tool.
 
 ## Hello, World!
 
-Once `basil` is installed you're ready to create a new game project.  Take a look at the [Hello, World! Guide](../guide/hello-world.html) to see how to get started using the Game Closure DevKit.
+Once `devkit` is installed you're ready to create a new game project.  Take a look at the [Hello, World! Guide](../guide/hello-world.html) to see how to get started using the Game Closure DevKit.
 

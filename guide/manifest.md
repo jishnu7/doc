@@ -22,7 +22,7 @@ format and can be edited by hand. For example, a minimal
 ~~~
 
 Manifest options are per game, they affect not only how the
-game appears in the Basil development environment, but also
+game appears in the devkit development environment, but also
 where to find image and font resources, store third-party service
 keys, and configures the environment to build for native devices.
 
@@ -41,7 +41,7 @@ format can be a bit fickle at times.
 ### appID
 1. `{string}` ---Auto-generated ID.
 
-This is a unique identifier for your game used by basil and
+This is a unique identifier for your game used by devkit and
 is auto-generated when a new project is created. The `appID`
 is a string containing only alpha-numeric characters.
 
@@ -49,7 +49,7 @@ is a string containing only alpha-numeric characters.
 1. `{string}` ---Defaults to the directory name of a new project.
 
 The `shortName` is an internal code name used for links to
-your project by the basil tools and to name output files
+your project by the devkit tools and to name output files
 during the build process. This is a alpha-numeric
 string---which *does not* start with a number---and should
 be unique to your game studio.  It may contain dots (.) or dashes (-).  It may *not* contain spaces ( ) nor underscores (_).
@@ -85,13 +85,13 @@ developers, so use whatever convention you wish.
 
 The version of the Game Closure DevKit used to build this
 project. This value is automatically filled in when the game
-is run by basil.
+is run by devkit.
 
 ### group
 1. `{string}`
 
 If a group name is present, the project will be displayed in
-a separate tab in the Basil Web Interface. All games that
+a separate tab in the devkit Web Interface. All games that
 contain the same group name will appear in a list together.
 
 ### doc
@@ -99,7 +99,7 @@ contain the same group name will appear in a list together.
 
 This is a URL link pointing to documentation for the
 project. This is used for the examples to display the
-annotated source code and displayed in the basil project list.
+annotated source code and displayed in the devkit project list.
 
 ### supportedOrientations
 1. `{array} = ["portrait"]` ---Options are `"portrait"`, `"landscape"`, or both.

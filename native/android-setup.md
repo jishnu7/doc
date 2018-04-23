@@ -15,7 +15,7 @@ You will need some tools for Android development:
 + Android SDK 15
 + Android NDK r9
 + [Command Line Tools for Xcode](https://developer.apple.com/downloads) or [Xcode](https://itunes.apple.com/us/app/xcode/id497799835)
-+ Game Closure DevKit (basil)
++ Game Closure DevKit (devkit)
 
 Note that we require Android NDK r9. Beware r8e, which has a serious bug. For more information, see [Ingo Muschenetz's explanation and patch](http://developer.appcelerator.com/blog/2013/03/correcting-a-bug-in-the-latest-google-ndk-r8e.html).
 
@@ -83,17 +83,17 @@ $ brew install android-ndk
 
 The homebrew install script will add the required NDK tools to your path. 
 
-## Install Android Plugin for Basil
+## Install Android Plugin for devkit
 
-Basil is the command-line tool you will use from the Game Closure DevKit to perform native builds.  Make sure your version of basil is up to date with `basil update`.
+devkit is the command-line tool you will use from the Game Closure DevKit to perform native builds.  Make sure your version of devkit is up to date with `devkit update`.
 
-The first step to doing Android development with basil is to install the Android plugin.  At a command-line enter the command:
+The first step to doing Android development with devkit is to install the Android plugin.  At a command-line enter the command:
 
 ~~~
-$ basil install native-android
+$ devkit install native-android
 ~~~
 
-This downloads and installs the Android plugin for basil.
+This downloads and installs the Android plugin for devkit.
 
 ## Generating a Keystore
 
@@ -135,7 +135,7 @@ An example "android" section in DevKit's `config.json` file:
 	"android": {
 		"root": "/Users/bbaxter/cleanroom/android",
 		"key": "bearded bobs",
-		"keystore": "/Users/bbaxter/cleanroom/basil/beards.keystore",
+		"keystore": "/Users/bbaxter/cleanroom/devkit/beards.keystore",
 		"storepass": "fuzzyfiggin",
 		"keypass": "fuzzyfiggin"
 	}
@@ -253,23 +253,23 @@ It is recommended to set the USB Charge mode to "Charge Only" while connected so
 
 If you run into problems, try our [Android troubleshooting guide](./android-troubleshooting.html).
 
-### Appendix: Manual Install of the Android Plugin for Basil
+### Appendix: Manual Install of the Android Plugin for devkit
 
-**This process should only be done as a last resort.** Make sure your version of basil is up to date with `basil update`.
+**This process should only be done as a last resort.** Make sure your version of devkit is up to date with `devkit update`.
 
 Clone the Game Closure
-[Android GitHub repository](https://github.com/gameclosure/native-android). Switch to this directory and make sure everything is up-to-date:
+[Android GitHub repository](https://github.com/hashcube/native-android). Switch to this directory and make sure everything is up-to-date:
 
 ~~~
-$ git clone https://github.com/gameclosure/native-android
+$ git clone https://github.com/hashcube/native-android
 $ cd native-android
 $ git checkout develop
 $ git submodule update --init
 ~~~
 
-To let basil know where to find the android repository,
+To let devkit know where to find the android repository,
 update the **config.json** file located in the root of the
-basil install:
+devkit install:
 
 ~~~
 {

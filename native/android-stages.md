@@ -30,7 +30,7 @@ For more information see the [basic DevKit guides](../guide/install.html).
 
 ### 2. Test App Development
 
-Test your game code live on the device with the [Game Closure Test App](./android-test-app.html).  You will host a server on your computer, and setup your mobile device to use WiFi.  Build and install the Test App on a USB-attached Android device with `basil testapp native-android`.
+Test your game code live on the device with the [Game Closure Test App](./android-test-app.html).  You will host a server on your computer, and setup your mobile device to use WiFi.  Build and install the Test App on a USB-attached Android device with `devkit testapp native-android`.
 
 Tap the installed "Test App" icon on your Android device.  Select your server from the on-screen list, then select which game to test.  Making code changes on your computer can be pushed quickly to the device by opening the on-screen menu and selecting the Restart option.
 
@@ -40,7 +40,7 @@ You may also use `adb logcat | grep JS` to view the JavaScript logs.
 
 ### 3. Building
 
-[Build and install](./android-build.html) your game to a device connected via USB.  Simply run `basil build native-android` to produce an APK, then install it with `adb install`.
+[Build and install](./android-build.html) your game to a device connected via USB.  Simply run `devkit build native-android` to produce an APK, then install it with `adb install`.
 
 The Chrome Web Inspector interface may also be used to inspect and debug JavaScript game code running on the Android device.  Simply attach your Android device via the USB cable and use the Remote Debug feature to trap exceptions and view the console logs of Test App sessions.
 

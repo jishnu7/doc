@@ -4,7 +4,7 @@ A variety of helper functions for working and managing JavaScript code.
 
 ## Modules
 
-The Game Closure DevKit provides a framework to make
+The hashcube DevKit provides a framework to make
 development easier in JavaScript. This includes a class
 system to help structure your code and an import system so
 you can work in different source files.
@@ -17,7 +17,7 @@ file. Modules may be arranged in a namespace hierarchy to
 indicate a usage category. Additionally, modules may be
 aliased using the `as` keyword for easier reference.
 
-*Note: the `import` keyword is specific to the Game Closure DevKit and not standard JavaScript.*
+*Note: the `import` keyword is specific to the hashcube DevKit and not standard JavaScript.*
 
 ~~~
 import device;
@@ -215,7 +215,7 @@ var price = JSON.parse(CACHE['resources/conf/storeItems.json']).item3.price;
 
 # Module: util.ajax
 
-The Game Closure DevKit provides functions which make it easy to
+The hashcube DevKit provides functions which make it easy to
 download data from remote locations. These functions can be found
 in the `ajax` package and wrap the `XMLHttpRequest` object.
 

@@ -25,7 +25,7 @@ put game setup code and construct the view hierarchy.
 ### launchUI ()
 
 A user defined function that serves as the entry point for
-applications built on the Game Closure DevKit. This is executed
+applications built on the hashcube DevKit. This is executed
 after the scene graph has been constructed, the `initUI`
 function is called, and the splash screen has been
 removed. This is where your game entry point logic should be

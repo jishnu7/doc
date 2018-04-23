@@ -10,7 +10,7 @@ A more direct approach would be to break on the exception and inspect the JavaSc
 
 ## Setup
 
-Run `basil serve` and launch a Chrome web browser.  Navigate to the Game Closure DevKit webapp at `http://localhost:9200` in the web browser.  Select "Remote Debug" from the left-hand navigation pane.  After a moment you will see a web inspector app in the right-hand pane.
+Run `devkit serve` and launch a Chrome web browser.  Navigate to the Game Closure DevKit webapp at `http://localhost:9200` in the web browser.  Select "Remote Debug" from the left-hand navigation pane.  After a moment you will see a web inspector app in the right-hand pane.
 
 Remote JavaScript debugging is only available when using the [Test App](./ios-test-app.html).  To install the test app, launch its Xcode project ([see test app documentation](./ios-test-app.html)), attach a mobile device, and run the Xcode project on the device.
 

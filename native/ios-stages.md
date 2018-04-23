@@ -32,13 +32,13 @@ For more information see the [basic DevKit guides](../guide/install.html).
 
 ### 2. Test App Development
 
-Test your game code live on the device with the [Game Closure Test App](./ios-test-app.html).  The test app will allow you to quickly test your game on a device without having to recompile and install a new application every time you make a change.  You will host a server on your computer, and setup your mobile device to use WiFi.  Build and install the Test App on a USB-attached iOS device with `basil testapp native-ios`.
+Test your game code live on the device with the [Game Closure Test App](./ios-test-app.html).  The test app will allow you to quickly test your game on a device without having to recompile and install a new application every time you make a change.  You will host a server on your computer, and setup your mobile device to use WiFi.  Build and install the Test App on a USB-attached iOS device with `devkit testapp native-ios`.
 
 The same Chrome [Web Inspector interface](./ios-remote-debug.html) may be used to investigate coding errors on the mobile device from the comfort of your computer.
 
 ### 3. Building
 
-Use the command-line tools from the Game Closure DevKit to [build your game code](./ios-build.html) into an Xcode project.  The full list of command-line arguments can be brought up by running `basil build native-ios --help`.
+Use the command-line tools from the Game Closure DevKit to [build your game code](./ios-build.html) into an Xcode project.  The full list of command-line arguments can be brought up by running `devkit build native-ios --help`.
 
 <div class="figure-wrapper">
 <figure>

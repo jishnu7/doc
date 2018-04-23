@@ -10,7 +10,7 @@ A more direct approach would be to break on the exception and inspect the JavaSc
 
 ## Setup
 
-Run `basil serve` and launch a Chrome web browser.  Navigate to the Game Closure DevKit webapp at `http://localhost:9200` in the web browser.  Select "Remote Debug" from the left-hand navigation pane.  After a moment you will see a web inspector app in the right-hand pane.
+Run `devkit serve` and launch a Chrome web browser.  Navigate to the Game Closure DevKit webapp at `http://localhost:9200` in the web browser.  Select "Remote Debug" from the left-hand navigation pane.  After a moment you will see a web inspector app in the right-hand pane.
 
 Remote JavaScript debugging is only available for Android devices connected via a USB cable, running a game built with the --debug and --no-compress flags.  See the [Android build documentation](./android-build.html) for more information on the build process.
 

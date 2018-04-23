@@ -6,7 +6,7 @@ sound within your game, consult the [AudioManager API](../api/audio.html).
 
 ## The Essentials
 
-On iOS you cannot play .OGG audio, so ensure that your sound files are in .MP3 format as discussed in this guide.  With the Game Closure DevKit, you can easily support both .OGG for Android and .MP3 for iOS by having two copies of each sound file.  When building, basil will take the .OGG version when it can be used on the target platform (Android for example) and will fall back to the .MP3 extension version if needed (iOS).  Inside your game, name your sound files with a .MP3 extension rather than .OGG.
+On iOS you cannot play .OGG audio, so ensure that your sound files are in .MP3 format as discussed in this guide.  With the Game Closure DevKit, you can easily support both .OGG for Android and .MP3 for iOS by having two copies of each sound file.  When building, devkit will take the .OGG version when it can be used on the target platform (Android for example) and will fall back to the .MP3 extension version if needed (iOS).  Inside your game, name your sound files with a .MP3 extension rather than .OGG.
 
 ## Audio Recording and Editing Tools
 

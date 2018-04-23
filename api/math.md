@@ -5,7 +5,7 @@ below provide assistance with many common tasks. Modules are
 included that provide geometric primitives for representing
 in game objects and functions to handle collisions between
 them. For additional convenience, utility functions for
-numbers, arrays, and angles are provided. [Source code](https://github.com/gameclosure/js.io/blob/master/packages/math/util.js)
+numbers, arrays, and angles are provided. [Source code](https://github.com/hashcube/js.io/blob/master/packages/math/util.js)
 
 ~~~
 import math.util as util;
@@ -96,7 +96,7 @@ util.sign(0);   //=> 0
 
 # Module: math.array
 
-Basic functions for operating on one or more arrays. [Source code](https://github.com/gameclosure/js.io/blob/master/packages/math/array.js)
+Basic functions for operating on one or more arrays. [Source code](https://github.com/hashcube/js.io/blob/master/packages/math/array.js)
 
 ~~~
 import math.array as array;
@@ -224,7 +224,7 @@ array.rotate([1,2,3,4,5],-1); //=> [5,1,2,3,4]
 An object with `x` and `y` numeric properties, typically
 representing coordinates on a Cartesian plane. In many cases
 it refers to a location on a device's screen, where the
-position `{x: 0, y: 0}` is the top-left corner. [Source code](https://github.com/gameclosure/js.io/blob/master/packages/math/geom/Point.js)
+position `{x: 0, y: 0}` is the top-left corner. [Source code](https://github.com/hashcube/js.io/blob/master/packages/math/geom/Point.js)
 
 ~~~
 import math.geom.Point as Point;
@@ -469,7 +469,7 @@ and ranges from 0 to -3.14159.
 
 A class for representing a line in a 2D plane. A line
 consists of a start point and end
-point. [Source code](https://github.com/gameclosure/js.io/blob/master/packages/math/geom/Line.js)
+point. [Source code](https://github.com/hashcube/js.io/blob/master/packages/math/geom/Line.js)
 
 ~~~
 import math.geom.Line as Line;
@@ -550,7 +550,7 @@ Inherits from
 
 Class used for representing circles in a 2D plane. Functions
 are provided to scale and make copies of the
-object. [Source code](https://github.com/gameclosure/js.io/blob/master/packages/math/geom/Circle.js)
+object. [Source code](https://github.com/hashcube/js.io/blob/master/packages/math/geom/Circle.js)
 
 
 ## Methods
@@ -606,7 +606,7 @@ circle.scale(3); //=> {x: 3, y: 9, radius: 15}
 
 Class used to represent rectangles in a 2D plane. Functions
 are provided to perform unions and other
-tasks. [Source code](https://github.com/gameclosure/js.io/blob/master/packages/math/geom/Rect.js)
+tasks. [Source code](https://github.com/hashcube/js.io/blob/master/packages/math/geom/Rect.js)
 
 ## Methods
 
@@ -784,7 +784,7 @@ to the point (x,y). This means that vectors have both a
 direction (The angle of this arrow) and a magnitude (The
 length of the arrow). Vectors are useful for representing
 position, velocity, and other properties of in game
-objects. [Source code](https://github.com/gameclosure/js.io/blob/master/packages/math/geom/Vec2D.js)
+objects. [Source code](https://github.com/hashcube/js.io/blob/master/packages/math/geom/Vec2D.js)
 
 
 ## Methods
@@ -965,7 +965,7 @@ the magnitude of `vec` multiplied by `scalar`.
 Class containing functions for working with angles. The
 functions simplify keeping angles within the range -PI to PI
 and also assist with calculating angle
-ranges/differences. [Source code](https://github.com/gameclosure/js.io/blob/master/packages/math/geom/angle.js)
+ranges/differences. [Source code](https://github.com/hashcube/js.io/blob/master/packages/math/geom/angle.js)
 
 ~~~
 import math.geom.angle as angle;

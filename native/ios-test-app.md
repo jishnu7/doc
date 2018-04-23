@@ -15,7 +15,7 @@ Turn on WiFi and connect your mobile device to the same LAN as your computer.
 To run the iOS Test App on your mobile device, connect it to your computer via a USB data cable, and enter the following command at a console:
 
 ~~~
-$ basil testapp native-ios
+$ devkit testapp native-ios
 ~~~
 
 The iOS Test App Xcode project will open after a moment.  Select a device to install it to at the top, and hit the Play button to build and install the Test App to the device.
@@ -29,14 +29,14 @@ After installation you will be able to launch the Test App from its app icon on 
 </figure>
 </div>
 
-This will also run the Basil Server, which is needed for the Test App to run properly.
+This will also run the devkit Server, which is needed for the Test App to run properly.
 
-## Running the Basil Server
+## Running the devkit Server
 
-An instance of the DevKit basil server must be running to serve games for the test app.  To start a new basil server without building the Test App enter this command at a console:
+An instance of the DevKit devkit server must be running to serve games for the test app.  To start a new devkit server without building the Test App enter this command at a console:
 
 ~~~
-$ basil serve
+$ devkit serve
 ~~~
 
 This will start hosting the Test App Server on your LAN.

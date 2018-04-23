@@ -4,7 +4,7 @@
 
 Testing your game on your cellphone for the first time is an exhilerating affair full of nail-biting anticipation. The process of getting there for Android devices has been stream-lined for you in the Game Closure DevKit.
 
-Building your game to run on a mobile device is done using the Game Closure DevKit `basil` command-line tool.  See the [Android Setup Guide](./android-setup.html) for steps to get prerequisites, supported mobile devices, and steps on getting started.
+Building your game to run on a mobile device is done using the Game Closure DevKit `devkit` command-line tool.  See the [Android Setup Guide](./android-setup.html) for steps to get prerequisites, supported mobile devices, and steps on getting started.
 
 ## Building an .APK
 
@@ -14,25 +14,25 @@ To build your game for debugging, open a console and change directory to your ga
 $ cd whack-that-mole
 $ ls
 README.md     manifest.json resources     src
-$ basil build native-android --no-compress --debug --clean
+$ devkit build native-android --no-compress --debug --clean
 [build]   Building: debug/native-android
 ...
 ~~~
 
-By specifying the --no-compress option, basil will not try to compress JavaScript files.  This speeds up the build process and is recommended for most pre-release builds.
+By specifying the --no-compress option, devkit will not try to compress JavaScript files.  This speeds up the build process and is recommended for most pre-release builds.
 
 Combining the --no-compress and --debug options will also allow you to do [remote JavaScript debugging](./android-remote-debug.html) from your computer.
 
 **Note:** For convenience the debug builds can also be done with command
 
 ~~~
-$ basil debug native-android
+$ devkit debug native-android
 ~~~
 
 If you want to build your game for the Google Play store use the command
 
 ~~~
-$ basil release native-android
+$ devkit release native-android
 ~~~
 
 When the build completes, you will see a line such as:
@@ -55,13 +55,13 @@ The -r flag means to attempt a reinstall.  Note that this will fail if the APK i
 
 If you run into problems, try our [Android troubleshooting guide](./android-troubleshooting.html).
 
-### Appendix: Basil Debug
+### Appendix: devkit Debug
 
-`basil debug native-android` is equivalent to running `basil build native-android --debug --no-compress`
+`devkit debug native-android` is equivalent to running `devkit build native-android --debug --no-compress`
 
-### Appendix: Basil Release
+### Appendix: devkit Release
 
-`basil release native-android` is equivalent to running `basil build native-android` with no arguments.
+`devkit release native-android` is equivalent to running `devkit build native-android` with no arguments.
 
 ### Appendix: Build Options
 
@@ -83,7 +83,7 @@ General build options:
 **For a fast debug build:**
 
 ~~~
-$ basil debug native-android
+$ devkit debug native-android
 $ adb install -r build/debug/native-android/whackthatmole.apk
 ~~~
 
@@ -92,7 +92,7 @@ This specifies a debug build, cleans before building, does not compress JavaScri
 **For a thorough release build:**
 
 ~~~
-$ basil release native-android
+$ devkit release native-android
 $ adb install -r build/release/native-android/whackthatmole.apk
 ~~~
 

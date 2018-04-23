@@ -47,7 +47,7 @@ directory structure of a project:
 project
 .
 ├── manifest.json
-├── sdk/ -> /path/to/basil/sdk
+├── sdk/ -> /path/to/devkit/sdk
 ├── build/
 ├── resources/
 │   └── sounds/

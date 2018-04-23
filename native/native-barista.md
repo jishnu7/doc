@@ -6,7 +6,7 @@ Barista enables you to generate code for any language.
 
 With the expressive syntax and powerful flexibility of Barista you can quickly accomplish many code generation tasks, such as writing boiler-plate object wrapper code for several targets simultaneously.
 
-Download the latest Barista from [the GitHub repository](http://github.com/gameclosure/Barista).
+Download the latest Barista from [the GitHub repository](http://github.com/hashcube/Barista).
 
 Under the engines directory you can add new targets:
 /Users/cat/barista/engines/myTarget/

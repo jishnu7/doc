@@ -3,13 +3,13 @@
 In this guide you'll see how to scale your game in a way
 that fits multiple device aspect ratios. This example is
 part of the *examples* add-on, which can be installed in to
-basil with the following at your command line:
+devkit with the following at your command line:
 
 ~~~
-$ basil install examples
+$ devkit install examples
 ~~~
 
-In the basil web interface, navigate to **Projects >
+In the devkit web interface, navigate to **Projects >
 Examples > Layout: Scale Region** to run the example in the simulator.
 
 It can also be [viewed online](../example/basics-scalescreen/)

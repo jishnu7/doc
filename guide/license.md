@@ -2,7 +2,7 @@
 
 ## Game Closure DevKit
 
-Game Closure offers two licensing options which are designed to be complementary, the [GPLv3](http://www.gnu.org/licenses/gpl-3.0.html) and the [Game Closure Free License (GCFL)](http://www.gameclosure.com/GCFL-1.0.pdf). These licenses allow you to have source code access to the DevKit, but still release proprietary games. You’ll never have to pay us any money to use the DevKit under either of these options.
+Game Closure offers two licensing options which are designed to be complementary, the [GPLv3](http://www.gnu.org/licenses/gpl-3.0.html) and the [Game Closure Free License (GCFL)](http://www.Game Closure.com/GCFL-1.0.pdf). These licenses allow you to have source code access to the DevKit, but still release proprietary games. You’ll never have to pay us any money to use the DevKit under either of these options.
 
 For complete licensing information please refer to the [license page](http://www.gameclosure.com/license.html) of the Game Closure website.
 

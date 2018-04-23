@@ -1,7 +1,7 @@
 # Module: device
 
 Information and settings about the device running the
-application. Due to the many platforms the Game Closure DevKit
+application. Due to the many platforms the hashcube DevKit
 runs on, it is useful to be able to run code based on the
 environment.
 

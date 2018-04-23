@@ -6,14 +6,14 @@ Help us make the Game Closure DevKit great! We depend on bug fixes, features, an
 
 ## Contributor Process
 
-1. Sign a [CLA](http://www.gameclosure.com/cla.html) electronically as a personal contributor.
+1. Sign a [CLA](http://www.Game Closure.com/cla.html) electronically as a personal contributor.
 2. If you are using the DevKit as part of a company, you need to have an authorized representative sign the CCLA. Contact us to get a copy of the CCLA: **cla@gameclosure.com**
 3. Confirm that your name appears on the authorized contributors list, along with your company/employer.
 4. Submit any modifications to Game Closure in the form of a pull request through the official DevKit github repository. More information about git, github, and pull requests can be found on github.com. NOTE: If you sign a CLA and make any pull request, that contribution will always be governed by the CLA.
 
 ## Contributor License Agreement (CLA)
 
-The [CLA](http://www.gameclosure.com/cla.html) is a structured agreement between you and Game Closure that allows us to accept your contributions. The core of the agreement is that:
+The [CLA](http://www.Game Closure.com/cla.html) is a structured agreement between you and Game Closure that allows us to accept your contributions. The core of the agreement is that:
 
 * You assign Game Closure ownership over your contributions
 * Game Closure grants you a license to your contributions

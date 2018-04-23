@@ -48,7 +48,7 @@ If you see "JavaScript error out of memory" at the console then you probably hav
 
 ## Sound Problems
 
-On iOS you cannot play .OGG audio, so ensure that your sound files are in .MP3 format as discussed in the [audio production guide](../guide/audio-assets.html).  With the Game Closure DevKit, you can easily support both .OGG for Android and .MP3 for iOS by having two copies of each sound file.  When building, `basil` will take the .OGG version when it can be used on the target platform (Android for example) and will fall back to the .MP3 extension version if needed (iOS).  Inside your game, name your sound files with a .MP3 extension rather than .OGG.
+On iOS you cannot play .OGG audio, so ensure that your sound files are in .MP3 format as discussed in the [audio production guide](../guide/audio-assets.html).  With the Game Closure DevKit, you can easily support both .OGG for Android and .MP3 for iOS by having two copies of each sound file.  When building, `devkit` will take the .OGG version when it can be used on the target platform (Android for example) and will fall back to the .MP3 extension version if needed (iOS).  Inside your game, name your sound files with a .MP3 extension rather than .OGG.
 
 On iOS devices there is a switch that can mute audio, so make sure that did not get flipped by accident.
 

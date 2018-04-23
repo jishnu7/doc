@@ -1,15 +1,15 @@
 # Android Plugin System
 
-Writing the Android native code for a DevKit plugin is covered in this guide, which uses the [Geolocation plugin](http://github.com/gameclosure/geoloc) as an example.
+Writing the Android native code for a DevKit plugin is covered in this guide, which uses the [Geolocation plugin](http://github.com/hashcube/geoloc) as an example.
 
 For an overview of the plugin system, the requisite directory structure, and how to write the JavaScript component of the plugin, please see the [main plugin development guide](../guide/plugins.html).
 
 ### Usage
 
-First install the plugin with `basil install [plugin name]`.  For example:
+First install the plugin with `devkit install [plugin name]`.  For example:
 
 ~~~
-basil install geoloc
+devkit install geoloc
 ~~~
 
 To test plugins you will want to add the required plugins to your game's manifest.json file:
@@ -23,7 +23,7 @@ To test plugins you will want to add the required plugins to your game's manifes
 And do a full build:
 
 ~~~
-basil debug native-android --clean --open
+devkit debug native-android --clean --open
 ~~~
 
 This will add the required libraries and code for the plugin to the native stack so that it will be present during runtime.
@@ -79,7 +79,7 @@ For example you can allow each game to specify a `leadbolt.jar` file that then g
 
 ###### copyFiles: Java Code
 
-This key should list any Java source code files in the `addons/geoloc/android/` directory that will be incorporated into the Android build.  This includes any .IADL files.  The `basil` build scripts will pull the package name out of the Java files.
+This key should list any Java source code files in the `addons/geoloc/android/` directory that will be incorporated into the Android build.  This includes any .IADL files.  The `devkit` build scripts will pull the package name out of the Java files.
 
 The TeaLeaf Java source code will be built first, and then the Activity for your game will be built.  It is in this second build step where your plugin code is built.
 
@@ -89,7 +89,7 @@ If your package is under `com.tealeaf.plugin.plugins`, then the file will be cop
 
 The `copyFiles` key can also be used to copy .xml and other resources into the `res/` directory for the Android build.  The way to do this is to create a new "res" directory under your plugin's "android" directory.  Then create subdirectories under "res" for any resources you want to include.  For each resource, add it to the `copyFiles` key.
 
-For example, the [Airpush plugin](http://github.com/gameclosure/airpush) includes an XML layout file.  Here is the plugin directory structure:
+For example, the [Airpush plugin](http://github.com/hashcube/airpush) includes an XML layout file.  Here is the plugin directory structure:
 
 ~~~
 .
