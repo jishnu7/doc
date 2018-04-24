@@ -1,6 +1,6 @@
 # Class: event.Emitter
 
-The hashcube DevKit provides several mechanisms for
+The Game Closure Devkit provides several mechanisms for
 handling events that allows cross-object communication. To
 see what type of events a particular class supports, a
 list is provided in that component's API documentation. For
@@ -17,7 +17,7 @@ event. Any number of callbacks can be associated with a
 particular event, allowing multiple listeners to register
 callbacks for the event without the emitter object knowing
 anything about who the listeners are or what the callbacks
-do. Many classes in the hashcube DevKit inherit from
+do. Many classes in the Game Closure Devkit inherit from
 `event.Emitter` which allows the developer to listen for
 certain events and run code at a given time.
 
