@@ -4,7 +4,7 @@
 
 Mozilla SpiderMonkey is an interpreter and JIT (Just-in-Time) Compiler for JavaScript.  Apple does not allow self-modifying app code onto the App Store, so the Game Closure DevKit is based on the interpreter mode of SpiderMonkey, rather than the much faster IonMonkey engine.  We compile out the IonMonkey code during our builds.
 
-The [Mozilla Public License](http://en.wikipedia.org/wiki/Mozilla_Public_License) is permissive enough to allow us to use it in a commercial or open-source setting as long as the modified SpiderMonkey source code is provided.  You may download the source code for our branch of SpiderMonkey [here](https://github.com/gameclosure/spidermonkey-ios).
+The [Mozilla Public License](http://en.wikipedia.org/wiki/Mozilla_Public_License) is permissive enough to allow us to use it in a commercial or open-source setting as long as the modified SpiderMonkey source code is provided.  You may download the source code for our branch of SpiderMonkey [here](https://github.com/hashcube/spidermonkey-ios).
 
 To see how SpiderMonkey fits into the native stack on iOS, see the [Native Stack Overview](./native-stack.html).
 

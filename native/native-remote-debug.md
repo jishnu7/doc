@@ -2,7 +2,7 @@
 
 ## Overview
 
-The GameClosure [Native Inspector](http://github.com/gameclosure/NativeInspector) is a node.js project that provides:
+The GameClosure [Native Inspector](http://github.com/hashcube/NativeInspector) is a node.js project that provides:
 
 + JavaScript debugging
 + Console logs
@@ -37,7 +37,7 @@ NativeInspector also attempts to connect to any IP addresses that have been iden
 
 On the device side, the iOS codebase for Game Closure runs a custom debug server written from scratch.  The core of the D8 protocol is implemented in Objective-C++ for this platform, making it mostly feature-complete.  To avoid running the debug server for every game, the debug server will only run in Test App mode.
 
-When the Test App connects to the basil simulation server, the basil server will report the requesting IP address over UDP to the NativeInspector as indicated above.
+When the Test App connects to the devkit simulation server, the devkit server will report the requesting IP address over UDP to the NativeInspector as indicated above.
 
 ## Troubleshooting
 
@@ -55,7 +55,7 @@ This is a part of the [Game Closure DevKit project](http://docs.gameclosure.com)
 To install the software for stand-alone use and set it up:
 
 ~~~
-$ git clone https://github.com/gameclosure/NativeInspector
+$ git clone https://github.com/hashcube/NativeInspector
 $ cd NativeInspector
 $ npm install
 ~~~

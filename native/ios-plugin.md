@@ -1,6 +1,6 @@
 # iOS Plugin System
 
-Writing the iOS native code for a DevKit plugin is covered in this guide, which uses the [Geolocation plugin](http://github.com/gameclosure/geoloc) as an example.
+Writing the iOS native code for a DevKit plugin is covered in this guide, which uses the [Geolocation plugin](http://github.com/hashcube/geoloc) as an example.
 
 For an overview of the plugin system, the requisite directory structure, and how to write the JavaScript component of the plugin, please see the [main plugin development guide](../guide/plugins.html).
 
@@ -8,10 +8,10 @@ The iOS plugins consist of a `config.json` file, frameworks, and code.
 
 ### Usage
 
-First install the plugin with `basil install [plugin name]`.  For example:
+First install the plugin with `devkit install [plugin name]`.  For example:
 
 ~~~
-basil install geoloc
+devkit install geoloc
 ~~~
 
 To test plugins you will want to add the required plugins to your game's manifest.json file:
@@ -25,7 +25,7 @@ To test plugins you will want to add the required plugins to your game's manifes
 And do a full build:
 
 ~~~
-basil debug native-ios --clean
+devkit debug native-ios --clean
 ~~~
 
 This will add the required frameworks and code for the plugin to the native stack so that it will be present during runtime.
@@ -88,7 +88,7 @@ Source files are automatically added to the build files in the Xcode project.  T
 
 Inside the `code` files you can `#import` any file in the TeaLeaf Xcode project by the base file name without being concerned by the absolute path.  For instance, the `GeoLoc.mm` file can include the header that is added with `#import "GeoLoc.h"`.  It can also access any other existing files in the project.
 
-Furthermore these files are referenced instead of being copied.  The generated Xcode project contains references back to the addon files, and any changes to these files in Xcode will be preserved in the file system between `basil` builds.  This accelerates plugin development since you can iterate quickly to test new code.
+Furthermore these files are referenced instead of being copied.  The generated Xcode project contains references back to the addon files, and any changes to these files in Xcode will be preserved in the file system between `devkit` builds.  This accelerates plugin development since you can iterate quickly to test new code.
 
 ##### UserDefined
 

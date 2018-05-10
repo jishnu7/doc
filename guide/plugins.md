@@ -14,11 +14,11 @@ The JS Event System is used to send events to JavaScript, and a function is used
 
 ## Plugin Example: GeoLocation
 
-To demonstrate the plugin system, take the [GeoLocation Plugin](https://github.com/gameclosure/geoloc) as an example.  It will be referenced throughout the documentation.
+To demonstrate the plugin system, take the [GeoLocation Plugin](https://github.com/hashcube/geoloc) as an example.  It will be referenced throughout the documentation.
 
-To install the Geolocation addon, run `basil install geoloc`.  It will be installed under `devkit/addons/geoloc`.  You can also manually install addons under the `addons` directory.
+To install the Geolocation addon, run `devkit install geoloc`.  It will be installed under `devkit/addons/geoloc`.  You can also manually install addons under the `addons` directory.
 
-If you would like to add your plugin to the list of plugins that can be automatically installed with `basil install` please open up a discussion with us.
+If you would like to add your plugin to the list of plugins that can be automatically installed with `devkit install` please open up a discussion with us.
 
 ## Using plugins from your game
 
@@ -65,7 +65,7 @@ A normal DevKit plugin has a simple directory structure:
 
 All plugins should have a `README.md` or similar documentation to describe how to install it and platform-specific considerations when using the plugin.
 
-The `index.js` file is used by the addon system to notify the addon of `basil` events.  And the `package.json` file is a nodejs configuration file that specifies npm dependencies for the `index.js` source code.
+The `index.js` file is used by the addon system to notify the addon of `devkit` events.  And the `package.json` file is a nodejs configuration file that specifies npm dependencies for the `index.js` source code.
 
 The `android` and `ios` directories contain configuration and code for the supported native targets.
 
@@ -73,11 +73,11 @@ The `js` directory contains JavaScript files that will be added to the JavaScrip
 
 #### ./index.js
 
-The index JavaScript file can export several methods that get invoked by `basil` for different reasons:
+The index JavaScript file can export several methods that get invoked by `devkit` for different reasons:
 
 + `exports.init(common)` : Called when the addon is upgraded or first installed.
 
-+ `exports.load(common)` : Called on all addons when the addon is loaded on `basil` startup before a build begins.
++ `exports.load(common)` : Called on all addons when the addon is loaded on `devkit` startup before a build begins.
 
 ~~~
 exports.init = function (common) {
@@ -121,7 +121,7 @@ NATIVE.plugins.sendEvent("GeolocPlugin", "onRequest", JSON.stringify(e));
 
 This causes the `onRequest` function in the `GeolocPlugin` native class to be invoked.
 
-Another way to improve the readability of your code is to split the `NATIVE.plugins.sendEvent` call into a convenient wrapper.  In the following example from the [Facebook plugin](http://github.com/gameclosure/facebook/), `pluginSend("login");` can be used instead of the long-hand form above:
+Another way to improve the readability of your code is to split the `NATIVE.plugins.sendEvent` call into a convenient wrapper.  In the following example from the [Facebook plugin](http://github.com/hashcube/facebook/), `pluginSend("login");` can be used instead of the long-hand form above:
 
 ~~~
 function pluginSend(evt, params) {
@@ -150,7 +150,7 @@ NATIVE.events.registerHandler('geoloc', function(evt) {
 });
 ~~~
 
-The following `pluginOn` and `invokeCallbacks` functions are helpful wrappers from the [Facebook plugin](http://github.com/gameclosure/facebook/) you can drop into your own plugin to easily handle callbacks from native code:
+The following `pluginOn` and `invokeCallbacks` functions are helpful wrappers from the [Facebook plugin](http://github.com/hashcube/facebook/) you can drop into your own plugin to easily handle callbacks from native code:
 
 ~~~
 function pluginOn(evt, next) {
@@ -209,7 +209,7 @@ This is not demonstrated here since GeoLocation does not need to match responses
 
 Note that the `geoloc` plugin is a special case that breaks out of the normal js.io class system to add features to the global `navigator` object.  The preferred way to develop addon JavaScript is by using the normal js.io class system.
 
-For example, for the [MoPub](https://github.com/gameclosure/mopub/) plugin there is a `js/moPub.js` file:
+For example, for the [MoPub](https://github.com/hashcube/mopub/) plugin there is a `js/moPub.js` file:
 
 ~~~
 var MoPub = Class(function () {

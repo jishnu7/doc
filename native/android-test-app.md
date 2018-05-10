@@ -15,10 +15,10 @@ Turn on WiFi and connect your mobile device to the same LAN as your computer.
 To run the Android Test App on your mobile device, connect it to your computer via a USB data cable, and enter the following command at a console:
 
 ~~~
-$ basil testapp native-android
+$ devkit testapp native-android
 ~~~
 
-It will build and attempt to install the Test App on your device and start the basil server.
+It will build and attempt to install the Test App on your device and start the devkit server.
 
 After installation you will be able to launch the Test App from the applications list on your Android device:
 

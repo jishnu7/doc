@@ -319,7 +319,7 @@ propagate further.
 
 Construct and chain callbacks for asynchronous flow
 control. For advanced features with a more concise syntax,
-see the [ff Node.js module](https://github.com/gameclosure/ff).
+see the [ff Node.js module](https://github.com/hashcube/ff).
 
 Some APIs do not care when an event has fired, or even if it
 has fired already. An example of this is preloading an
